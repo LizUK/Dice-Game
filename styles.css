@@ -1,0 +1,50 @@
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+
+}
+
+
+body {
+  background-image: url(images/bg.png);
+  background-size: 100%;
+  background-position-y: 20%;
+}
+
+h1 {
+  margin: 60px 0 0 0;
+  font-family: 'PT Sans', sans-serif;
+  text-shadow: 5px 0 #232931;
+  font-size: 4rem;
+  color: #fff;
+}
+
+h1 img {
+	width: 65%;
+    margin: 40px 0 0 0;
+}
+
+p {
+  margin: 30px;
+    font-size: 2rem;
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+}
+
+img {
+  width: 80%;
+}
+
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+
+}
