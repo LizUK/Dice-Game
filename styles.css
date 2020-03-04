@@ -15,7 +15,7 @@
 
 /* Modal Content */
 .modal-content {
-  background-image: url(images/bg.png);
+  background-image: url(bg.png);
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
@@ -55,7 +55,7 @@
 
 
 body {
-  background-image: url(images/bg.png);
+  background-image: url(bg.png);
   background-size: 100%;
   background-position-y: 20%;
 }
