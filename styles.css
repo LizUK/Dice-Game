@@ -13,7 +13,7 @@
 }
 
 .modal-content {
-  background-image: url(images/bg.png);
+  background-image: url(bg.png);
   background-size: 100%;
   background-position: bottom;
   margin: auto;
@@ -50,7 +50,7 @@
 }
 
 body {
-  background-image: url(images/bg.png);
+  background-image: url(bg.png);
   background-size: 100%;
   background-position-y: 20%;
 }
