@@ -1,3 +1,46 @@
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 0; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-image: url(images/bg.png);
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70%;
+}
+
+/* The Close Button */
+.close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
 .container {
   width: 70%;
   margin: auto;
@@ -12,7 +55,7 @@
 
 
 body {
-  background-image: url(bg.png);
+  background-image: url(images/bg.png);
   background-size: 100%;
   background-position-y: 20%;
 }
@@ -25,13 +68,82 @@ h1 {
   color: #fff;
 }
 
-h1 img {
+h1.winner {
+  margin: 20px 0 0 0;
+}
+
+h1.winner img {
 	width: 65%;
     margin: 40px 0 0 0;
 }
 
+h1.title img {
+	width: 10%;
+    vertical-align: middle;
+}
+
+h1.title {
+	text-align: center;
+}
+
+.addNames {
+	width: 80%;
+    margin: 0 auto;
+}
+
+.headline h1 {
+	font-size: 3rem;
+}
+
+.headline {
+	/*width: 50%;
+    display: inline-block;*/
+}
+
+.info-box {
+	/*width: 40%;
+    display: inline-block;*/
+	margin-top: 30px;
+}
+
+.addNames label {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 1.5rem;
+    color: #fff;
+    margin-right: 20px;
+	font-size: 1.5rem;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.addNames input {
+	padding-left: 5px;
+}
+
+#myBtn {	
+	color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	position: relative;
+    bottom: 15px;
+    margin-left: 20px;
+}
+
+#myBtn:hover,
+#btnClose:hover {
+    color: #212529;
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+}
+
 p {
-  margin: 30px;
+  margin: 30px 30px 10px;
     font-size: 2rem;
   color: #fff;
   font-family: 'PT Sans', sans-serif;
@@ -39,6 +151,21 @@ p {
 
 img {
   width: 80%;
+}
+
+#btnClose {
+	margin: 20px auto;
+    width: 200px;
+    display: block;
+	color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 footer {
