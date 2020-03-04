@@ -12,7 +12,7 @@ function namePlayers() {
 
 	var randomNumber1 = Math.floor(Math.random() * 6) + 1;
 	
-	var randomDiceImage = "images/dice" + randomNumber1 + ".png";
+	var randomDiceImage = "dice" + randomNumber1 + ".png";
 	
 	var image1 = document.querySelectorAll("img")[1];
 	
@@ -20,16 +20,16 @@ function namePlayers() {
 	
 	var randomNumber2 = Math.floor(Math.random() * 6) + 1;
 	
-	var randomDiceImage1 = "images/dice" + randomNumber2 + ".png";
+	var randomDiceImage1 = "dice" + randomNumber2 + ".png";
 	
 	document.querySelectorAll("img")[2].setAttribute("src", randomDiceImage1);
 	
 	if (randomNumber1 > randomNumber2) {
-	document.querySelector("h1.winner").innerHTML = player1 + " IS THE ... <br><img src='images/winner.png'>";	
+	document.querySelector("h1.winner").innerHTML = player1 + " IS THE ... <br><img src='winner.png'>";	
 	}
 	
 	else if (randomNumber1 < randomNumber2) {
-	document.querySelector("h1.winner").innerHTML = player2 + " IS THE ... <br><img src='images/winner.png'>";	
+	document.querySelector("h1.winner").innerHTML = player2 + " IS THE ... <br><img src='winner.png'>";	
 	}
 	
 	else  {
