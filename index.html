@@ -8,30 +8,94 @@
 
   </head>
   <body>
+  	<div class="top">
+          <h1 class="title">Simply dice game <img src="images/dice.png" alt="Simply dice game"></h1>
+    </div>
+    
+    <div class="addNames">
+    
+        <div class="headline"> 
+           
+        	<h1>Add your player's names:</h1>
+        
+        </div>
+    
+        <div class="info-box">
+        
+         <form action="#" id="myForm" onSubmit="return namePlayers()" method="post">
+            
+            <label>Player 1</label><input type="text" name="player1" id="player1" placeholder="Player 1 Name"><br>
+        
+            <label>Player 2</label><input type="text" name="player2" id="player2" placeholder="Player 2 Name">
+            
+            <input id="myBtn" type="submit" value="Roll the dice!"></input>
+            
+         </form>
+            
+        </div>
+        
+    </div>
+     
+     	
+
+  <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" onClick="window.location.reload();">&times;</span>
+    <section class="container-fluid">
+	
 
     <div class="container">
         <div class="top">
-          <h1>Refresh Me</h1>
+          <h1 class="winner">Refresh Me</h1>
         </div>
     
     	<div class="bottom">
           <div class="dice">
             <p class="player1">Player 1</p>
-            <img class="img1" src="dice6.png" />
+            <img class="img1" src="images/dice6.png" />
           </div>
     
           <div class="dice">
             <p class="player2">Player 2</p>
-            <img class="img2" src="dice6.png" />
+            <img class="img2" src="images/dice6.png" />
           </div>
           
-         <!-- <button class="add">Add Players</button> -->
 		</div>
     </div>
+    
+             <button id="btnClose" type="submit" onClick="window.location.reload();">Roll Again!</button>
 
+	</section>
+  </div>
+
+</div>
 	
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
 
-<script type="text/javascript" src="dicee.js" charset="utf-8"></script>
+		var modal = document.getElementById("myModal");
+		
+		var btn = document.getElementById("myBtn");
+		
+		
+		
+		  btn.onclick = function() {
+		  modal.style.display = "block";
+		}
+		
+		
+		
+		
+	</script>
+    <script type="text/javascript" src="dicee.js" charset="utf-8"></script>
+
   </body>
 
   <footer>
